@@ -16,8 +16,8 @@ The user is expected to enter the city they want to know its weather, and all th
 ## :computer: Technologies Used
  The project used HTML, CSS, and Vanilla JS. No CSS frameworks.
  ## :telephone_receiver: Support and contact details
-Should you have any suggestions and ideas on how to improve the app, feel free to contact me through kenyansajustine@gmail.com.
-Alternatively, reach me through: +254 70440 3225
+Should you have any suggestions and ideas on how to improve the app, feel free to contact me through kenyansajustine@gmail.com. <br>
+Alternatively, reach me through: +254 70440 3225. <br>
 Code contributions are also welcome
 ### License
 Copyright (c) {2023} **{Kentech Products}**
