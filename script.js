@@ -14,7 +14,7 @@ async function checkweather(){
       }
 
       document.querySelector(".city").innerHTML = data.name; //adds city name
-      
+      document.querySelector(".temp").innerHTML = data.main.temp; //adds temp, which is the api object is inside main object
 }
 
 checkweather();
