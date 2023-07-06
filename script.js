@@ -1,5 +1,5 @@
 const apiKey = "d73ca1ff266b81160a8f0222ece6da79";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector(".search-box input");
 const searchBtn = document.querySelector(".search-box button");
@@ -9,10 +9,11 @@ async function checkweather(city){
     console.log("Fetching weather for", city);
     try {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-        if (!response.ok) {
-          throw new Error('Request failed with status ' + response.status);
-        }
-        const data = await response.json();
+        if (response.status == 404) {
+            document.querySelector(".error").style.display = "block";
+            document.querySelector(".weather").style.display = "none";
+        }else {
+            const data = await response.json();
 
         document.querySelector(".city").innerHTML = data.name; //adds city name
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "&degC"; //adds temp, which is the api object is inside main object
@@ -35,6 +36,8 @@ async function checkweather(city){
             }
 
             document.querySelector(".weather").style.display = "block";
+            document.querySelector(".error").style.display = "none";
+        }
         
         } catch (error) {
         console.log('An error occurred:', error);

@@ -82,4 +82,12 @@
     font-size: 20px;
     margin-top: -5px;
 }
+.error{
+    color: aliceblue;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
 
+}
