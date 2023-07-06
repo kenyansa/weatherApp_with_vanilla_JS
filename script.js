@@ -12,6 +12,9 @@ async function checkweather(){
       } catch (error) {
         console.log('An error occurred:', error);
       }
+
+      document.querySelector(".city").innerHTML = data.name; //adds city name
+      
 }
 
 checkweather();
