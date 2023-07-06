@@ -41,3 +41,6 @@
     height: 60px;
     cursor: pointer;
 }
+.search-box button img{
+    width: 20px;
+}
