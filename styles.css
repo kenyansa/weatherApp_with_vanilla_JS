@@ -4,3 +4,31 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+.card{
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, lightgreen,turquoise);
+  color: chocolate;
+  margin: 100px auto 0;
+  border-radius: 20px; 
+  padding: 40px 35px;
+  text-align: center;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 18px;
+}
