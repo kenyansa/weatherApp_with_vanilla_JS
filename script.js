@@ -22,4 +22,6 @@ async function checkweather(city){
       document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";//adds humidy, which is the api object is inside main object
 }
 
-checkweather();
+searchBtn.addEventListener('click', ()=>{
+    checkweather();
+} )
