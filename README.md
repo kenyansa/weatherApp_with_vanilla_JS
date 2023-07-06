@@ -12,7 +12,8 @@ The app does not need any installations to work.
 <!-- There are no known bugs. -->
 The app is still in the lab
 ## :pushpin: BDD
-The user is expected to enter the city they want to know its weather, and all the needed dtails will be displayed below.
+The user is expected to enter the city they want to know its weather, and all the needed dtails will be displayed below.<br>
+If the name of the city does not exist, a message will be displayed "Invalid city name"
 ## :computer: Technologies Used
  The project used HTML, CSS, and Vanilla JS. No CSS frameworks.
  ## :telephone_receiver: Support and contact details
